@@ -2,11 +2,13 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    
 }
 
 .test {
     background-image: url('./img/banner.png');
     background-repeat: no-repeat;
+    background-size: 100% auto; /* Zorgt ervoor dat de breedte 100% is en de hoogte automatisch wordt aangepast */
     height: 1080px;
 }
 
