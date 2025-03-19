@@ -13,7 +13,7 @@ body {
     aspect-ratio: 16 / 9; 
     width: 100%; 
     margin: 0;
-    height: calc(115vh - 112px);
+    height: calc(100vh - 112px);
 }
 
 
