@@ -8,8 +8,12 @@ body {
 .test {
     background-image: url('./img/banner.png');
     background-repeat: no-repeat;
-    background-size: 100% auto; 
-    height: 1080px;
+    background-size: cover; 
+    background-position: center;
+    aspect-ratio: 16 / 9; 
+    width: 100%; 
+    margin: 0;
+    height: calc(100vh - 112px);
 }
 
 
