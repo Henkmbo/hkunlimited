@@ -1,49 +1,133 @@
 <link href='https://fonts.googleapis.com/css?family=Gurajada' rel='stylesheet'>
-<div class="service">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <div class="container">
-        <div class="title">
-            <h1>Onze</h1>
-            <h1 style="color: #3FD8BE;">Service</h1>
+
+<section class="service">
+    <div class="title">
+        <h2 class="white">Onze</h2>
+        <h2 class="light-blue">Service</h2>
+    </div>
+    <div class="hr">
+        <hr>
+    </div>
+    <div class="content">
+        <div class="box">
+            <i class="fa-solid fa-pen icon"></i>
+            <div class="boxTitle">
+                WEBDESIGN
+            </div>
         </div>
-        <div class="hr">
-            <hr>
+        <div class="box">
+            <i class="fa-solid fa-gears icon"></i>
+            <div class="boxTitle">
+                WEBAPPLICATIE
+            </div>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-code icon"></i>
+            <div class="boxTitle">
+                WEBDEVELOPMENT
+            </div>
         </div>
     </div>
-
-</div>
+</section>
 
 <style>
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Gurajada', sans-serif;
+    }
+
+    :root {
+        --primary-color: #3FD8BE;
+        --secondary-color: #000510;
+        --f50: 50px;
+    }
+
+    h2 {
+        margin: 0;
+    }
+    
+    .white {
+        color: white;
+    }
+
+    .light-blue {
+        color: #3FD8BE;
+    }
+
     .service {
         background-color: #000510;
-        height: 500px;
-        width: 100vw;
+        padding-bottom: 75px;
     }
-    .title {
-    color: white;
-    text-align: center;
-    font-family: 'Gurajada', sans-serif;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-    font-size: 38px; 
-    letter-spacing: 3px; 
-}
 
-.hr {
-    display: flex;
-    justify-content: center;
-    margin-top: -90px; /* Verklein of gebruik een negatieve waarde om het hoger te zetten */
-}
+    .service .title {
+        color: white;
+        font-size: var(--f50);
+        letter-spacing: 3px; 
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
 
-.hr hr {
-    border: none; 
-    height: 3px; 
-    background-color: #3FD8BE; 
-    width: 7%; /* Past beter onder de titel */
-}
+    .service .hr {
+        display: flex;
+        justify-content: center;
+    }
 
+    .service .hr hr {
+        border: none; 
+        height: 3px; 
+        background-color: #3FD8BE; 
+        width: 7%; 
+        position: absolute;
+        top: 100px;
+    }
 
+    .service .content{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        flex-wrap: wrap;
 
+    }
+
+    .service .box{
+        height: 300px;
+        width: 350px;
+        font-family: 'Gurajada', sans-serif;
+        font-size: 20px;
+        letter-spacing: 2px;
+        color: white;
+        border: 1.5px solid white;
+        border-radius: 1px;
+    }
+
+    .icon{
+        font-size: 40px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #3FD8BE;
+    }
+
+    .service .boxTitle{
+        color: white;
+        text-align: center;
+        font-family: 'Gurajada', sans-serif;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+        font-size: 38px; 
+        letter-spacing: 3px; 
+        font-weight: 0;
+    }
 </style>
