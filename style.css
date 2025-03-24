@@ -1,19 +1,100 @@
-body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    
-}
-
-.test {
+.banner {
     background-image: url('./img/banner.png');
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    aspect-ratio: 16 / 9; 
-    width: 100%; 
-    margin: 0;
-    height: calc(100vh - 112px);
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: auto;
 }
+
+.banner .socials {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    height: 100%; 
+    position: absolute; 
+    left: 3%; 
+}
+
+.banner .line {
+    width: 2px; 
+    height: 20%; 
+    background-color: white; 
+    margin-bottom: 20px; 
+}
+
+.banner .icons img {
+    display: block;
+}
+
+.banner .content .title {
+    margin-top: 100px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.banner .horizontal-line {
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: white; 
+    margin-left: 70px ; 
+}
+
+.banner .content .info {
+    margin-top: 75px;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav .menu {
+    display: flex;
+}
+
+.banner .menu-logo {
+    display: none;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+nav .menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 9px;
+    color: var(--gray);
+    cursor: pointer;
+}
+
+nav .menu ul li {
+    margin: 0 30px; 
+    font-size: var(--f26);
+    color: white;
+}
+
+nav .hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 
 

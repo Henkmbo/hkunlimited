@@ -1,0 +1,87 @@
+@media (max-width: 1560px) {
+    .banner .socials {
+        display: none;
+    }
+
+    .banner .horizontal-line {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .banner .content .title {
+        margin-top: 75px;
+    }
+
+    .banner .title h1 {
+        font-size: 6vw;
+    }
+
+    .banner .info {
+        padding-bottom: 50px;
+    }
+
+    .banner .info h3 {
+        font-size: 4vw; 
+    }
+
+    .banner .horizontal-line {
+        width: 20%; 
+    }
+
+    nav .menu {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 40%;
+        background-color: #000510;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1;
+        margin: 0;
+    }
+
+    .menu-logo {
+        display: block; /* Maak het logo zichtbaar */
+        margin: 30px 30px;
+    }
+
+    nav .menu ul {
+        flex-direction: column;
+    }
+
+    nav .menu ul li {
+        display: flex;
+        margin-bottom: 15px;
+    }
+
+    nav .hamburger-menu {
+        display: block;
+    }
+
+    nav .menu.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) { 
+    nav .menu {
+        width: 60%;
+    }
+}
+
+@media (max-width: 390px) { 
+    nav .menu {
+        width: 100%;
+    }
+
+    nav .hamburger-menu i{
+        display: block;
+        z-index: 2;
+        position: relative;
+    }
+}
