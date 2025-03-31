@@ -1,5 +1,6 @@
 .banner {
-  background-image: url("./img/banner.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000510), 
+                url("./img/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -194,14 +195,24 @@ nav .hamburger-menu {
 }
 
 .projecten {
-  background-image: url("./img/updated2 1 (5).png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  aspect-ratio: 16 / 9;
-  width: 100%;
-  height: auto;
-  padding-bottom: 50px;
+    position: relative; /* Zorgt ervoor dat het pseudo-element correct wordt geplaatst */
+    background-image: none; /* Verwijder de achtergrondafbeelding van de hoofdcontainer */
+}
+
+.projecten::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), #000510), 
+                url("./img/updated2 1 (5).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    transform: rotate(180deg) scaleY(-1); /* Draait en spiegelt de afbeelding */
+    z-index: -1; /* Zorgt ervoor dat het pseudo-element achter de inhoud staat */
 }
 
 .projecten .img {
@@ -211,6 +222,7 @@ nav .hamburger-menu {
 .projecten .info {
   width: 50%;
   margin-left: 40px;
+  position: relative;
 }
 
 .projecten .content {
@@ -260,9 +272,6 @@ nav .hamburger-menu {
 
 .cross2 {
     font-size: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 20px;
     position: absolute; 
     top: 120px;
@@ -271,4 +280,10 @@ nav .hamburger-menu {
 
 .cross {
     font-weight: 100;
+}
+
+.cross3 {
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
 }

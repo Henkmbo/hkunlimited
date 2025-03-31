@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger-menu i');
     const menu = document.querySelector('.menu');
-    const menuLogo = document.querySelector('.menu-logo'); 
+    const menuLogo = document.querySelector('.menu-logo');  
     const menuIcon = document.querySelector('.menu-small-icon');
 
     hamburger.addEventListener('click', () => {
