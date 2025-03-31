@@ -1,9 +1,12 @@
 :root {
+    --f18: 18px;
     --f22: 22px;
     --f26: 26px;
     --f48: 48px;
+    --f50: 50px;
     --gray: #AEABAB;
     --primary-color: #3FD8BE;
+    --secondary-color: #000510;
 }
 
 body {

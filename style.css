@@ -91,6 +91,107 @@ nav .hamburger-menu {
 }
 
 
+/* Service */
+
+.white {
+    color: white;
+}
+
+.light-blue {
+    color: #3FD8BE;
+}
+
+.service {
+    background-color: #000510;
+    padding-bottom: 75px;
+    position: relative;
+}
+
+.service .title {
+    color: white;
+    font-size: var(--f48);
+    letter-spacing: 3px; 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-bottom: 75px;
+}
+
+.service .hr {
+    display: flex;
+    justify-content: center;
+}
+
+.service .hr hr {
+    border: none; 
+    height: 3px; 
+    background-color: #3FD8BE; 
+    width: 7%; 
+    position: absolute;
+    top: 55px;
+}
+
+.service .content{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+
+}
+
+.service .box{
+    height: 300px;
+    width: 350px;
+    font-size: var(--f18);
+    letter-spacing: 2px;
+    color: white;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.service .boxText{
+    text-align: center;
+    line-height: 1.2;
+    color: var(--gray);
+}
+
+.service .borderIcon{
+    height: 60px;
+    width: 60px;
+    border: 1.5px solid #3FD8BE;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.icon{
+    font-size: 30px;
+    color: #3FD8BE;
+    
+}
+
+.service .boxTitle{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    font-size: var(--f26); 
+    letter-spacing: 3px; 
+    font-weight: 600;
+    padding: 10px 0px;
+}
+
+
 
 
 
