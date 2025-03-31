@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger-menu i');
     const menu = document.querySelector('.menu');
-    const menuLogo = document.querySelector('.menu-logo'); // Selecteer het bestaande logo
+    const menuLogo = document.querySelector('.menu-logo'); 
+    const menuIcon = document.querySelector('.menu-small-icon');
 
     hamburger.addEventListener('click', () => {
         menu.classList.toggle('active'); 
@@ -16,9 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Toon of verberg het logo
         if (menu.classList.contains('active')) {
-            menuLogo.style.display = 'block'; // Maak het logo zichtbaar
+            menuLogo.style.display = 'block'; 
+            menuIcon.style.display = 'block';
         } else {
-            menuLogo.style.display = 'none'; // Verberg het logo
+            menuLogo.style.display = 'none'; 
+            menuIcon.style.display = 'none';
         }
     });
 });
