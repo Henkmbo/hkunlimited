@@ -162,14 +162,10 @@ nav .hamburger-menu {
   top: 55px;
 }
 
-.service .card {
-  background-color: #14253D;
-  border-radius: 15px;
-  padding: 30px;
-}
-
 .service .card img {
   border-radius: 15px;
+  height: 200px;
+  width: 400px;
 }
 
 .service .card .title {
@@ -191,7 +187,18 @@ nav .hamburger-menu {
   border-bottom: 2px solid hsl(215, 32%, 27%);
   padding: 20px 0;
 }
+.service .card {
+  background-color: #14253D;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 4px 6px rgba(0, 0, 0, 0.2); /* Mooie schaduw */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animatie voor hover-effect */
+}
 
+.service .card:hover {
+  transform: translateY(-5px); /* Laat de kaart iets omhoog komen bij hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4), 0 6px 8px rgba(0, 0, 0, 0.3); /* Versterk de schaduw bij hover */
+}
 .service .card .small-image {
     width: 1.2em;
     margin-right: .5em;
