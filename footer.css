@@ -1,0 +1,334 @@
+/* Reset en basis stijlen */
+.hk-footer * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Footer */
+  .hk-footer {
+    width: 100%;
+    background-color: #050a14;
+    border-top: 1px solid #162040;
+    position: relative;
+    overflow: hidden;
+    color: white;
+  }
+  
+  /* Decorative elements */
+  .hk-footer-glow {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 225, 180, 0.05);
+    filter: blur(3rem);
+  }
+  
+  .hk-footer-glow-1 {
+    top: 0;
+    left: 25%;
+    width: 16rem;
+    height: 16rem;
+  }
+  
+  .hk-footer-glow-2 {
+    bottom: 0;
+    right: 25%;
+    width: 20rem;
+    height: 20rem;
+  }
+  
+  /* Code pattern background */
+  .hk-code-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h100v100H0z' fill='none'/%3E%3Cpath fill='%2300e1b4' d='M37 25l25 25-25 25-5-5 20-20-20-20z'/%3E%3Cpath fill='%2300e1b4' d='M13 25l5 5-20 20 20 20-5 5-25-25z'/%3E%3C/svg%3E");
+    background-size: 100px 100px;
+  }
+  
+  .hk-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Main Footer Content */
+  .hk-footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 0;
+  }
+  
+  @media (min-width: 768px) {
+    .hk-footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hk-footer-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Footer Column */
+  .hk-footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .hk-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .hk-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  .hk-logo-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .hk-footer-text {
+    color: #a0aec0;
+    line-height: 1.5;
+  }
+  
+  .hk-social-links {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .hk-social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #0a1528;
+    border: 1px solid #162040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00e1b4;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .hk-social-icon:hover {
+    background-color: #00e1b4;
+    color: #050a14;
+  }
+  
+  .hk-footer-heading {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .hk-footer-underline {
+    width: 2.5rem;
+    height: 0.25rem;
+    background-color: #00e1b4;
+  }
+  
+  .hk-footer-links {
+    list-style: none;
+  }
+  
+  .hk-footer-link-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  .hk-footer-link {
+    display: flex;
+    align-items: center;
+    color: #a0aec0;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .hk-footer-link:hover {
+    color: #00e1b4;
+  }
+  
+  .hk-footer-link-icon {
+    width: 1rem;
+    height: 1rem;
+    color: #00e1b4;
+    margin-right: 0.5rem;
+  }
+  
+  .hk-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .hk-newsletter-input {
+    padding: 0.5rem 0.75rem;
+    background-color: #0a1528;
+    border: 1px solid #162040;
+    border-radius: 0.25rem;
+    color: white;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .hk-newsletter-input:focus {
+    border-color: #00e1b4;
+    box-shadow: 0 0 0 2px rgba(0, 225, 180, 0.2);
+  }
+  
+  .hk-newsletter-button {
+    padding: 0.5rem 0.75rem;
+    background-color: #00e1b4;
+    color: #050a14;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .hk-newsletter-button:hover {
+    background-color: #00c4a0;
+  }
+  
+  .hk-location {
+    padding-top: 1rem;
+    border-top: 1px solid #162040;
+  }
+  
+  .hk-location-title {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hk-address {
+    color: #a0aec0;
+    font-style: normal;
+  }
+  
+  /* Tech Stack Section */
+  .hk-tech-stack {
+    padding: 2rem 0;
+    border-top: 1px solid #162040;
+  }
+  
+  .hk-tech-title {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hk-tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .hk-tech-item {
+    padding: 0.5rem 1rem;
+    background-color: #0a1528;
+    border: 1px solid #162040;
+    border-radius: 0.5rem;
+    color: #cbd5e0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hk-tech-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #00e1b4;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  /* Bottom Bar */
+  .hk-bottom-bar {
+    padding: 1.5rem 0;
+    border-top: 1px solid #162040;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .hk-bottom-bar {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .hk-copyright {
+    color: #718096;
+    font-size: 0.875rem;
+  }
+  
+  .hk-legal-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .hk-legal-link {
+    color: #718096;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .hk-legal-link:hover {
+    color: #00e1b4;
+  }
+  
+  /* Animated dots */
+  .hk-animated-dot {
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #00e1b4;
+    border-radius: 50%;
+    animation: ping 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+  
+  .hk-animated-dot-1 {
+    top: 5rem;
+    right: 2.5rem;
+    animation-duration: 3s;
+  }
+  
+  .hk-animated-dot-2 {
+    bottom: 10rem;
+    left: 5rem;
+    animation-duration: 4s;
+  }
+  
+  .hk-animated-dot-3 {
+    top: 10rem;
+    left: 33%;
+    animation-duration: 5s;
+  }
+  
+  @keyframes ping {
+    75%,
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
+  
