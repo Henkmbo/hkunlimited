@@ -136,7 +136,7 @@ nav .hamburger-menu {
   position: relative;
 }
 
-.service .title {
+.service .titletop {
   color: white;
   font-size: var(--f48);
   letter-spacing: 3px;
@@ -162,61 +162,50 @@ nav .hamburger-menu {
   top: 55px;
 }
 
-.service .content {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  flex-wrap: wrap;
+.service .card {
+  background-color: #14253D;
+  border-radius: 15px;
+  padding: 30px;
 }
 
-.service .box {
-  height: 300px;
-  width: 350px;
-  font-size: var(--f18);
-  letter-spacing: 2px;
-  color: white;
-  border: 1.5px solid white;
-  border-radius: 10px;
-  padding: 25px;
+.service .card img {
+  border-radius: 15px;
 }
 
-.service .boxText {
-  text-align: center;
-  line-height: 1.2;
+.service .card .title {
+  color: white;
+  font-size: var(--f26); /* Lettergrootte */
+  line-height: 1.6em; /* Regelhoogte */
+  font-weight: 600; /* Letterdikte */
+  font-family: 'Outfit', sans-serif; /* Lettertype */
+  text-decoration: underline;
+  padding: 20px 0;
+}
+
+.service .card .text {
   color: var(--gray);
+  line-height: 1.5;
 }
 
-.service .borderIcon {
-  height: 60px;
-  width: 60px;
-  border: 1.5px solid #3fd8be;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  margin-top: 20px;
+.service .card .text-bottom {
+  border-bottom: 2px solid hsl(215, 32%, 27%);
+  padding: 20px 0;
 }
 
-.icon {
-  font-size: 30px;
-  color: #3fd8be;
+.service .card .small-image {
+    width: 1.2em;
+    margin-right: .5em;
 }
 
-.service .boxTitle {
+/* .service .card .title-experience {
   color: white;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  gap: 10px;
-  font-size: var(--f26);
-  letter-spacing: 3px;
-  font-weight: 600;
-  padding: 10px 0px;
+} */
+
+.service .card .text-experience {
+  color: white;
 }
+
+
 
 .projecten {
     position: relative; /* Zorgt ervoor dat het pseudo-element correct wordt geplaatst */
