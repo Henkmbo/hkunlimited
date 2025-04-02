@@ -237,6 +237,11 @@ nav .hamburger-menu {
 
 .projecten .img {
   width: 50%;
+
+}
+
+.projecten .img:hover {
+  box-shadow: rgba(149, 157, 165, 0.515) 0px 8px 24px;
 }
 
 .projecten .info {
