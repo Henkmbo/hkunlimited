@@ -1,0 +1,196 @@
+/* Reset en basis stijlen */
+.hk-contact-section * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contact Section */
+  .hk-contact-section {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #050a14;
+    color: white;
+  }
+  
+  .hk-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Header */
+  .hk-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  
+  .hk-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hk-title-white {
+    color: white;
+  }
+  
+  .hk-title-teal {
+    color: #00e1b4;
+  }
+  
+  .hk-title-underline {
+    width: 4rem;
+    height: 0.25rem;
+    background-color: #00e1b4;
+    margin-top: 0.5rem;
+  }
+  
+  /* Contact Grid */
+  .hk-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 768px) {
+    .hk-contact-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Contact Info */
+  .hk-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .hk-info-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hk-info-text {
+    color: #a0aec0;
+    line-height: 1.5;
+  }
+  
+  /* Contact Details */
+  .hk-contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .hk-contact-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hk-icon-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 9999px;
+    background-color: #0a1528;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.75rem;
+  }
+  
+  .hk-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #00e1b4;
+  }
+  
+  .hk-contact-text {
+    color: #cbd5e0;
+  }
+  
+  /* Contact Form */
+  .hk-contact-form-container {
+    background-color: #0a1528;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #162040;
+  }
+  
+  .hk-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .hk-form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media (min-width: 640px) {
+    .hk-form-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .hk-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .hk-form-label {
+    color: #cbd5e0;
+    font-size: 0.875rem;
+  }
+  
+  .hk-form-input,
+  .hk-form-textarea {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    background-color: #050a14;
+    border: 1px solid #162040;
+    border-radius: 0.25rem;
+    color: white;
+    font-size: 0.875rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .hk-form-input:focus,
+  .hk-form-textarea:focus {
+    border-color: #00e1b4;
+    box-shadow: 0 0 0 2px rgba(0, 225, 180, 0.2);
+  }
+  
+  .hk-form-textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .hk-button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #00e1b4;
+    color: #050a14;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .hk-button:hover {
+    background-color: #00c4a0;
+  }
+  
+  

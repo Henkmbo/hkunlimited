@@ -42,7 +42,6 @@
     position: absolute;
     inset: 0;
     opacity: 0.05;
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h100v100H0z' fill='none'/%3E%3Cpath fill='%2300e1b4' d='M37 25l25 25-25 25-5-5 20-20-20-20z'/%3E%3Cpath fill='%2300e1b4' d='M13 25l5 5-20 20 20 20-5 5-25-25z'/%3E%3C/svg%3E");
     background-size: 100px 100px;
   }
   
@@ -97,7 +96,7 @@
   .hk-logo-text {
     font-size: 1.25rem;
     font-weight: 700;
-    color: white;
+    color: var(--primary-color);
   }
   
   .hk-footer-text {
@@ -167,56 +166,52 @@
     margin-right: 0.5rem;
   }
   
-  .hk-newsletter {
+/* Contact Info */
+.hk-contact-info {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1.25rem;
+    margin-top: 0.5rem;
   }
   
-  .hk-newsletter-input {
-    padding: 0.5rem 0.75rem;
+  .hk-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .hk-contact-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
     background-color: #0a1528;
     border: 1px solid #162040;
-    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00e1b4;
+    flex-shrink: 0;
+  }
+  
+  .hk-contact-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hk-contact-label {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0.25rem;
+  }
+  
+  .hk-contact-value {
     color: white;
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    transition: color 0.3s;
   }
   
-  .hk-newsletter-input:focus {
-    border-color: #00e1b4;
-    box-shadow: 0 0 0 2px rgba(0, 225, 180, 0.2);
-  }
-  
-  .hk-newsletter-button {
-    padding: 0.5rem 0.75rem;
-    background-color: #00e1b4;
-    color: #050a14;
-    font-weight: 500;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .hk-newsletter-button:hover {
-    background-color: #00c4a0;
-  }
-  
-  .hk-location {
-    padding-top: 1rem;
-    border-top: 1px solid #162040;
-  }
-  
-  .hk-location-title {
-    color: white;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-  }
-  
-  .hk-address {
-    color: #a0aec0;
-    font-style: normal;
+  .hk-contact-value:hover {
+    color: #00e1b4;
   }
   
   /* Tech Stack Section */

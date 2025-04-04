@@ -1,0 +1,518 @@
+/* Reset en basis stijlen */
+.hk-over-ons * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Over Ons Section */
+  .hk-over-ons {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: #050a14;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Decorative elements */
+  .hk-glow {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 225, 180, 0.05);
+    filter: blur(3rem);
+  }
+  
+  .hk-glow-1 {
+    top: 5rem;
+    left: 2.5rem;
+    width: 16rem;
+    height: 16rem;
+  }
+  
+  .hk-glow-2 {
+    bottom: 5rem;
+    right: 2.5rem;
+    width: 20rem;
+    height: 20rem;
+  }
+  
+  .hk-dot {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #00e1b4;
+  }
+  
+  .hk-dot-1 {
+    top: 10rem;
+    right: 5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    box-shadow: 0 0 10px 5px rgba(0, 225, 180, 0.3);
+  }
+  
+  .hk-dot-2 {
+    bottom: 15rem;
+    left: 10rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    box-shadow: 0 0 15px 8px rgba(0, 225, 180, 0.3);
+  }
+  
+  /* Grid pattern */
+  .hk-grid-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNMzAgMzBoMzB2MzBIMzB6IiBzdHJva2U9InJnYmEoMCwyMjUsMTgwLDAuMDUpIiBzdHJva2Utd2lkdGg9Ii41Ii8+PHBhdGggZD0iTTAgMzBoMzB2MzBIMHoiIHN0cm9rZT0icmdiYSgwLDIyNSwxODAsMC4wNSkiIHN0cm9rZS13aWR0aD0iLjUiLz48cGF0aCBkPSJNMzAgMGgzMHYzMEgzMHoiIHN0cm9rZT0icmdiYSgwLDIyNSwxODAsMC4wNSkiIHN0cm9rZS13aWR0aD0iLjUiLz48cGF0aCBkPSJNMCAwaDMwdjMwSDB6IiBzdHJva2U9InJnYmEoMCwyMjUsMTgwLDAuMDUpIiBzdHJva2Utd2lkdGg9Ii41Ii8+PC9nPjwvc3ZnPg==");
+    opacity: 0.2;
+  }
+  
+  .hk-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Header */
+  .hk-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  
+  .hk-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hk-title-white {
+    color: white;
+  }
+  
+  .hk-title-teal {
+    color: #00e1b4;
+  }
+  
+  .hk-title-underline {
+    width: 4rem;
+    height: 0.25rem;
+    background-color: #00e1b4;
+    margin-top: 0.5rem;
+  }
+  
+  /* Company Story */
+  .hk-story-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  @media (min-width: 768px) {
+    .hk-story-section {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .hk-story-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .hk-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #0a1528;
+    border: 1px solid #162040;
+    border-radius: 0.5rem;
+    color: #00e1b4;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hk-story-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .hk-story-text {
+    color: #a0aec0;
+    line-height: 1.625;
+  }
+  
+  .hk-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .hk-stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #0a1528;
+    border: 1px solid #162040;
+    border-radius: 0.5rem;
+    min-width: 7.5rem;
+  }
+  
+  .hk-stat-number {
+    color: #00e1b4;
+    font-size: 1.875rem;
+    font-weight: 700;
+  }
+  
+  .hk-stat-label {
+    color: #a0aec0;
+    font-size: 0.875rem;
+  }
+  
+  .hk-story-image-container {
+    position: relative;
+  }
+  
+  .hk-image-glow {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0, 225, 180, 0.2), transparent);
+    border-radius: 0.5rem;
+    filter: blur(1rem);
+    z-index: -10;
+  }
+  
+  .hk-story-image-wrapper {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid #162040;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .hk-image-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(10, 21, 40, 0.8);
+  }
+  
+  .hk-story-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: overlay;
+  }
+  
+  .hk-image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(to top, #050a14, transparent);
+  }
+  
+  .hk-caption-line {
+    width: 0.25rem;
+    height: 2rem;
+    background-color: #00e1b4;
+    float: left;
+    margin-right: 0.5rem;
+  }
+  
+  .hk-caption-title {
+    color: white;
+    font-weight: 700;
+  }
+  
+  .hk-caption-subtitle {
+    color: #a0aec0;
+    font-size: 0.875rem;
+  }
+  
+  /* Mission & Vision */
+  .hk-mission-vision {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  @media (min-width: 768px) {
+    .hk-mission-vision {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  .hk-card {
+    background-color: #0a1528;
+    border: 1px solid #162040;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hk-card-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+  }
+  
+  .hk-card-corner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 5rem 5rem 0;
+    border-color: transparent rgba(0, 225, 180, 0.1) transparent transparent;
+  }
+  
+  .hk-card-content {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .hk-card-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #162040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .hk-card-icon .hk-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #00e1b4;
+  }
+  
+  .hk-card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .hk-card-text {
+    color: #a0aec0;
+    line-height: 1.625;
+  }
+  
+  /* Team Section */
+  .hk-team-section {
+    margin-bottom: 4rem;
+  }
+  
+  .hk-team-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .hk-team-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hk-team-subtitle {
+    color: #a0aec0;
+    max-width: 36rem;
+    margin: 0 auto;
+  }
+  
+  .hk-team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .hk-team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .hk-team-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .hk-team-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .hk-team-member {
+    background-color: #0a1528;
+    border: 1px solid #162040;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .hk-member-image-container {
+    aspect-ratio: 1 / 1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hk-member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .hk-team-member:hover .hk-member-image {
+    transform: scale(1.05);
+  }
+  
+  .hk-member-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #050a14, transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .hk-team-member:hover .hk-member-overlay {
+    opacity: 1;
+  }
+  
+  .hk-member-social {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .hk-social-link {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #162040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00e1b4;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .hk-social-link:hover {
+    background-color: #00e1b4;
+    color: #050a14;
+  }
+  
+  .hk-member-info {
+    padding: 1rem;
+  }
+  
+  .hk-member-name {
+    color: white;
+    font-weight: 500;
+  }
+  
+  .hk-member-role {
+    color: #00e1b4;
+    font-size: 0.875rem;
+  }
+  
+  /* CTA Section */
+  .hk-cta-section {
+    background: linear-gradient(to right, #0a1528, #162040);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    border: 1px solid #162040;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hk-cta-glow {
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: rgba(0, 225, 180, 0.1);
+    filter: blur(3rem);
+  }
+  
+  .hk-cta-glow-1 {
+    top: -2.5rem;
+    right: -2.5rem;
+  }
+  
+  .hk-cta-glow-2 {
+    bottom: -2.5rem;
+    left: -2.5rem;
+  }
+  
+  .hk-cta-content {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .hk-cta-content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .hk-cta-text {
+    max-width: 32rem;
+  }
+  
+  .hk-cta-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hk-cta-subtitle {
+    color: #cbd5e0;
+  }
+  
+  .hk-cta-button {
+    display: inline-block;
+    padding: 1.5rem;
+    background-color: #00e1b4;
+    color: #050a14;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+  }
+  
+  .hk-cta-button:hover {
+    background-color: #00c4a0;
+  }
+  
+  
