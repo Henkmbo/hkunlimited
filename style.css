@@ -312,3 +312,18 @@ nav .hamburger-menu {
     position: absolute;
     bottom: 0;
 }
+.menu-list {
+  list-style: none; /* Verwijdert bolletjes */
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list .li {
+  display: inline-block; /* Als je ze horizontaal naast elkaar wil */
+  margin-right: 20px;
+}
+
+.menu-list a {
+  text-decoration: none; /* Verwijdert onderstreping */
+  color: inherit; /* Gebruikt de tekstkleur van de ouder, bijv. zwart */
+}
