@@ -24,9 +24,7 @@ body {
     overflow-x: hidden; /* Only prevent horizontal scrolling */
     overflow-y: auto; /* Allow vertical scrolling */
     font-family: var(--var-heading);
-    font-weight: 600;
-    background-color: red;
-    
+    font-weight: 600;    
 }
 
 img {
