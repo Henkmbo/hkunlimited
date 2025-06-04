@@ -1,43 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.hamburger-menu i');
-    const menu = document.querySelector('.menu');
-    const menuLogo = document.querySelector('.menu-logo');  
-    const menuIcon = document.querySelector('.menu-small-icon');
-  
-    const checkScreenSize = () => {
-        if (window.innerWidth >= 992) {
-            menu.classList.remove('active');
-            hamburger.classList.remove('fa-times');
-            hamburger.classList.add('fa-bars');
-            menuLogo.style.display = 'none';
-            menuIcon.style.display = 'none';
-        }
-    };
 
-    checkScreenSize();
 
-    window.addEventListener('resize', checkScreenSize);
-
-    hamburger.addEventListener('click', () => {
-        if (window.innerWidth < 992) {
-            menu.classList.toggle('active'); 
-            
-            if (hamburger.classList.contains('fa-bars')) {
-                hamburger.classList.remove('fa-bars');
-                hamburger.classList.add('fa-times');
-            } else {
-                hamburger.classList.remove('fa-times');
-                hamburger.classList.add('fa-bars');
-            }
-
-            if (menu.classList.contains('active')) {
-                menuLogo.style.display = 'block'; 
-                menuIcon.style.display = 'block';
-            } else {
-                menuLogo.style.display = 'none'; 
-                menuIcon.style.display = 'none';
-            }
-        }
+// Self-executing function to prevent horizontal scrolling only
+(function() {
+    // Apply styles immediately and on DOMContentLoaded for redundancy
+    function preventHorizontalScrollOnly() {
+        // Only prevent horizontal scrolling, allow vertical
+        document.documentElement.style.overflowX = 'hidden';
+        document.body.style.overflowX = 'hidden';
+        
+        // Remove any fixed positioning that would prevent vertical scrolling
+        document.body.style.position = '';
+        document.body.style.height = '';
+    }
+    
+    // Apply immediately
+    preventHorizontalScrollOnly();
+    
+    // Also apply when DOM is loaded (for reliability)
+    document.addEventListener('DOMContentLoaded', function() {
+        preventHorizontalScrollOnly();
     });
-});
-
+})();

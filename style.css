@@ -41,7 +41,6 @@
   width: 50px;
   height: 2px;
   background-color: white;
-  margin-left: 70px;
 }
 
 .banner .content .info {
@@ -59,6 +58,10 @@ nav {
 
 nav .menu {
   display: flex;
+}
+
+.menu ul a {
+  text-decoration: none;
 }
 
 .banner .menu-logo {
@@ -111,6 +114,9 @@ nav .menu ul li {
   font-size: var(--f26);
   color: white;
 }
+nav .menu ul li a {
+ color: white;
+}
 
 nav .hamburger-menu {
   display: none;
@@ -146,6 +152,7 @@ nav .hamburger-menu {
   text-align: center;
   flex-wrap: wrap;
   padding-bottom: 75px;
+  padding-top: 75px;
 }
 
 .service .hr {
@@ -240,10 +247,6 @@ nav .hamburger-menu {
 
 }
 
-.projecten .img:hover {
-  box-shadow: rgba(149, 157, 165, 0.515) 0px 8px 24px;
-}
-
 .projecten .info {
   width: 50%;
   margin-left: 40px;
@@ -312,18 +315,116 @@ nav .hamburger-menu {
     position: absolute;
     bottom: 0;
 }
-.menu-list {
-  list-style: none; /* Verwijdert bolletjes */
-  padding: 0;
-  margin: 0;
+
+@media (max-width: 768px) {
+  .projecten .wrap {
+    padding: 30px 16px;
+  }
+
+  .projecten .content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .projecten .img {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .projecten .img img,
+  .projecten .img .picture {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .projecten .info {
+    width: 100%;
+    padding: 0;
+    margin-left: 0 !important;
+  }
+
+  .projecten .projectTitle h1,
+  .projecten .projectName h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .projecten .projectText {
+    font-size: 1em;
+    text-align: left;
+    margin-left: 0 !important;
+  }
+
+  .projecten .cross2,
+  .projecten .cross3 {
+    display: none;
+  }
+
+  .projecten .hr hr {
+    margin: 20px auto;
+    width: 60%;
+  }
 }
 
-.menu-list .li {
-  display: inline-block; /* Als je ze horizontaal naast elkaar wil */
-  margin-right: 20px;
+
+
+@media (max-width: 768px) {
+  .projecten .projectTitle,
+  .projecten .projectName,
+  .projecten .recentProject {
+    text-align: center;
+  }
 }
 
-.menu-list a {
-  text-decoration: none; /* Verwijdert onderstreping */
-  color: inherit; /* Gebruikt de tekstkleur van de ouder, bijv. zwart */
+@media (max-width: 900px) {
+  .service .wrap {
+    
+  }
+  .service .row {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .service .col4 {
+    width: 100%;
+   
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: center;
+  }
+  .service .card {
+    width: 100%;
+    min-width: 0;
+    
+    box-sizing: border-box;
+  }
+  .service .card img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    
+  }
+  .service .card .title {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  .service .card .text {
+    font-size: 1em;
+    text-align: left;
+  }
+  .service .flex.space-between.text-bottom {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .service .title-experience,
+  .service .text-experience {
+    font-size: 1em;
+  }
 }
